@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eStracta</title>
-</head>
-<body>
     <?php
     
     require("./vendor/autoload.php");
@@ -16,6 +8,7 @@
     $guzzleClient = new GuzzleClient(array(
         'timeout' => 60,
     ));    
+    
     $goutteClient = new GoutteClient();    
     $goutteClient->setClient($guzzleClient);
 
@@ -34,6 +27,5 @@
     print_r($table); 
     
     echo '</pre>';
-    ?>
-</body>
-</html>
+ 
+ 
