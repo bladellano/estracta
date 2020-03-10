@@ -28,8 +28,12 @@
     });
     array_shift($table);
 
-    echo json_encode($table); 
-
+    // echo json_encode($table); 
+    echo '<pre>';
+    
+    print_r($table); 
+    
+    echo '</pre>';
     ?>
 </body>
 </html>
